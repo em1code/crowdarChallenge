@@ -12,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -21,17 +23,26 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 // @author emiliano.molina
 
 public class BasePage {
-
+    
+    private static String browser = "chrome";
     protected static WebDriver driver;
     private static WebDriverWait wait;
     private static Actions action;
 
     static {
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--remote-allow-origins=*");
-        chromeOptions.addArguments("--disable-notifications");
-        driver = new ChromeDriver(chromeOptions);
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Documents\\BaseAutomationFramework");
+        if(browser.equalsIgnoreCase("chrome")){
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--remote-allow-origins=*");
+            chromeOptions.addArguments("--disable-notifications");
+            driver = new ChromeDriver(chromeOptions);
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Documents\\crowdarChallenge");
+        }else if(browser.equalsIgnoreCase("firefox")){
+            FirefoxOptions firefoxOptions = new FirefoxOptions();
+            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Documents\\crowdarChallenge");
+            driver = new FirefoxDriver(firefoxOptions);
+        }else{
+            throw new IllegalArgumentException();
+        }
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
