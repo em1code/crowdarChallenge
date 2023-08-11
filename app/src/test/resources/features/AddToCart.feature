@@ -54,34 +54,34 @@ Feature: Add products to cart functionality
             | Sauce Labs Bolt T-Shirt  | Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.                        | $15.99 |
             | Sauce Labs Fleece Jacket | It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office. | $49.99 |
 
-# Scenario: Add a product to an empty cart
-#     Given I add the product Sauce Labs Backpack to the cart
-#     And I should see the shopping cart icon with a quantity of 1
-#     When I click on shopping cart icon
-#     Then the shopping cart displays the product Sauce Labs Backpack with a quantity of 1
+    # Scenario: Add a product to an empty cart
+    #     Given I add the product Sauce Labs Backpack to the cart
+    #     And I should see the shopping cart icon with a quantity of 1
+    #     When I click on shopping cart icon
+    #     Then the shopping cart displays the product Sauce Labs Backpack with a quantity of 1
 
-# Scenario: Add multiple units of the same product
-#     Given I add to the cart the product Sauce Labs Bike Light
-#     And I should see the shopping cart icon with a quantity of 1
-#     When I click again in Add to cart button
-#     Then I should see the shopping cart icon with a quantity of 2
+    # Scenario: Add multiple units of the same product
+    #     Given I add to the cart the product Sauce Labs Bike Light
+    #     And I should see the shopping cart icon with a quantity of 1
+    #     When I click again in Add to cart button
+    #     Then I should see the shopping cart icon with a quantity of 2
 
-# Scenario: Update product quantity in the cart
-#     Given I has the product Sauce Labs Bike Light in the cart with a quantity of 2
-#     When the user modifies the quantity of Sauce Labs Bike Light to 4
-#     Then the shopping cart displays Sauce Labs Bike Light with a quantity of 4
+    # Scenario: Update product quantity in the cart
+    #     Given I has the product Sauce Labs Bike Light in the cart with a quantity of 2
+    #     When the user modifies the quantity of Sauce Labs Bike Light to 4
+    #     Then the shopping cart displays Sauce Labs Bike Light with a quantity of 4
 
-# Scenario: Add products with limited quantity
-#     Given the product Sauce Labs Fleece has an maximum capacity of 5 units
-#     When I adds 6 units of Sauce Labs Fleece to the cart
-#     Then An error message is diplayed indicating that the product Sauce Labs Fleece has a quantity of 5
+    # Scenario: Add products with limited quantity
+    #     Given the product Sauce Labs Fleece has an maximum capacity of 5 units
+    #     When I adds 6 units of Sauce Labs Fleece to the cart
+    #     Then An error message is diplayed indicating that the product Sauce Labs Fleece has a quantity of 5
 
-# Scenario: Navigate to Checkout page
-#     Given I has added a product in my shopping cart
-#     And I click the Checkout button
-#     Then I should see the Checkout page
+    # Scenario: Navigate to Checkout page
+    #     Given I has added a product in my shopping cart
+    #     And I click the Checkout button
+    #     Then I should see the Checkout page
 
-# Scenario: Can not access to Checkout page
-#     Given I don't has any product in my shopping cart
-#     And I click the Checkout button
-#     Then An error message is displayed indicating that I need add at least one product to proceed to Checkout
+    # Scenario: Can not access to Checkout page
+    #     Given I don't has any product in my shopping cart
+    #     And I click the Checkout button
+    #     Then An error message is displayed indicating that I need add at least one product to proceed to Checkout

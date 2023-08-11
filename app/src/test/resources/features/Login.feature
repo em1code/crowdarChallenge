@@ -57,6 +57,12 @@ Feature: Login
             | crowdar                  | secret_sauce |
             | admin123                 | secret_sauce |
 
+    # Scenario: Valid fields values
+    #     Given I enter an string values in Username and Password fields
+    #     And I enter an numeric values in Username and Password fields
+    #     And I enter an special character in Username and Password fields
+    #     Then All values are valid
+
     # Scenario: Successful logout
     #     Given I am loged in the Product Page
     #     And I click the Menu button
