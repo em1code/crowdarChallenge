@@ -35,6 +35,10 @@ There are 3 runner files, one for each feature
 
 ![](https://lh3.googleusercontent.com/pw/AIL4fc8Jxao3I-O0ZkJ2kK-hMnRnxxKoIqy0qTk5jVwUsOwQpKxOrW6mJr9OVscZem6immCVr8NJZXg2HW0iWctzTNc_Wt9cEqUtXSOF-VBfrulWUYZL0lWRNbN-6HajhMsw1zXXn7cZOF4h7KXU6XUlAEkibygHwHCDc0NYzi2p7R4a_jqveeod2IGgyrsKWAZjQDF-l8WiOBpU-CDMb9IBy2LmauqAGLArloCzQ1xjNlR-GdiLvuxhWOWhWQcYhWdGWlaXVnprLrPzebwvc3N4bI8dYdOrGH54IxW66FiVdEbnGmjeCSjQpu39Fz9cpTFRliz9WdbM7QndUiOPq69x8WTtt7XNEhzN1GQZoVWd7ndAQVMZIe2T2QHf_eEWQ6F4oHhBAgRqTN_Q-iqvWl7X00tpLEqaha4Vah3abOd6ysBBSMhkv3-97gQcRxvy6-CYIZj9AAC9Pw790ci7RoiyS5Zh_B-Hr2I9U1HwCZuyKqxnl1nXpVu6uhdr0yvv2lm3N4ksIj5Biu6OG1lvWvyflhi7MB2S7jtDj4CYjOD9GeHUuwLZYfjzkBsJQu_IN2wDUV8edM2YnzlxPg7aYjZBDPz1ox7znBvtJVviY3bksNs5CcpzQ39Ddw7BTeDLfZK_vJsUoM5LVBQ8CzLu1_vmjJc5I2zdHKfp4MHCB1H0l7AjTpYa961nMfLmvpUe652-Fp-gPebuiC3MCtWgp-fr0p7YAlNUa10sCnuqGXJsaKlSTJlkbU5Z59bN3LGSioZ6M0NBL5KV6w6g0lcbSU45FEavYSXBT6RxmgoZJxJikqCV5JRZvRAEFNKBBq5D1Erz7W_79guLIDNC6dTKhErs2vBffrquVkIybO7KJ_NX_K443uBzOBd2ADQAhE3OQXKTTe6ZkhKNV7l2zgsBUUR5cNMGLQ=w1198-h620-s-no?authuser=0)
 
+##### IMPORTANT NOTE
+> Change the value of the variable 'browser' in BasePage.java class file to 'firefox' to run in FireFox Browser. 
+Is 'chrome' by default.
+
 ### Reports
 > For reports please see test-output folder. You can find it in: **app\test-output**
 
